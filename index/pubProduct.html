@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发布商品</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/out.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body style=" background: #f4f8fb;">
+<div class="model-tips" id="model-tips">
+    <div class="tips">
+        <h3>提示</h3>
+        <p></p>
+        <span class="sure-btn">确定</span>
+    </div>
+</div>
+<div id="top-bar">
+    <div id="head_top" class="clearfix">
+        <span class="lf">大学生二手交易平台</span>
+        <ul class="rt">
+            <li><span id="welcome">您好！欢迎来到Old的驿站</span></li>
+            <li><a href="helpCenter.html">帮助中心</a></li>
+            <li class="login"><a href="login.html">登录</a><i></i>|</li>
+            <li class="register"><a href="register.html">免费注册</a></li>
+            <li class="exit"><a href="login.html">退出</a></li>
+        </ul>
+    </div>
+</div>
+<div id="head_main">
+    <div id="headMain_content" class="clearfix">
+        <a href="#" class="lf">
+            <img src="images/logo.png" alt="LOGO" />
+        </a>
+        <div id="search_box" class="lf">
+            <div class="search">
+                <input id="txtSearch" type="text" class="text" placeholder="请输入您需要的商品"/><input class="search_button" name="" type="button" value="搜索" />
+            </div>
+            <div class="hot_words">
+                <a href="#">自行车</a>|
+                <a href="#">电动车</a>|
+                <a href="#">笔记本</a>|
+                <a href="#">教材</a>
+            </div>
+        </div>
+        <div id="buy"class="rt">
+            <a  class="user">用户中心</a>
+            <a  class="my-grade">我的积分</a>
+            <a  class="cart">购物车</a>
+            <i></i>
+        </div>
+    </div>
+</div>
+<div id="main_nav">
+    <div id="nav" class="clearfix">
+        <div class="pructNav" id="pructNav-show">
+            <a href="javascript:;">所有商品分类</a>
+            <ul class="pull-menu">
+                <li><a href="">书籍资料</a></li>
+                <li><a href="">电子产品</a></li>
+                <li><a href="">家居用品</a></li>
+                <li class="subnav-click"><a href="">运动专区</a></li>
+                <li><a href="">校园代步</a></li>
+                <li><a href="">生活娱乐</a></li>
+                <li><a href="">鞋包配饰</a></li>
+                <li><a href="">租赁物品</a></li>
+                <li><a href="">其他商品</a></li>
+            </ul>
+        </div>
+        <ul class="lf">
+            <li><a href="firstPage.html">首页</a></li>
+            <li  class="pubProduct u-deepBlue"><a>商品发布</a></li>
+            <li class="wantBuyArea"><a>求购专区</a></li>
+            <!--<li><a href="">紧急销售</a></li>-->
+            <li class="newPub "><a >最新发布</a></li>
+            <li class="wantBuy"><a>发布求购</a></li>
+            <li class="headNav"><a href="helpCenter.html">其他</a></li>
+        </ul>
+    </div>
+
+</div>
+<div class="g-container fg-container">
+    <div class="fm-container clearfix">
+        <div class="myApp lf">
+            <ul>
+                <li class="title">我的账户</li>
+                <li class="accountInfo"><a href="../detail/html/accountInfo.html">账户信息</a></li>
+                <li><a href="../detail/html/stuCertification.html">学生认证</a></li>
+                <li><a href="../detail/html/changePwd.html">修改密码</a></li>
+                <li class="payChart"><a>消费统计</a></li>
+                <li class="incomeChart"><a>收入统计</a></li>
+                <li class="title">我的商品</li>
+                <li><a href="../detail/html/myShoppingCart.html">我的购物车</a></li>
+                <li><a href="../detail/html/myOrder.html">我的订单</a></li>
+                <li><a href="../detail/html/myCollection.html">我的收藏</a></li>
+                <li><a href="shelfGoods.html">下架商品</a></li>
+                <li class="title">商品管理</li>
+                <li><a href="myPub.html">我的发布</a></li>
+                <li><a href="../detail/html/myWantBuy.html">我的求购</a></li>
+                <li class="title">其他</li>
+                <li><a href="../detail/html/commodityRule.html">商品规则</a></li>
+                <li><a href="../detail/html/IntegralRule.html">积分规则</a></li>
+            </ul>
+        </div>
+        <div class="lf fmc-box">
+            <h3 class="clearfix"><span class="lf">发布商品</span> <a class="rt" href="javascript:;">我的商品</a></h3>
+            <form>
+                <div class="clearfix">
+                    <div class="lf fill">
+                        <div class="form-group"><label>商品名称：</label><input type="text" name="pname"/></div>
+                        <div class="form-group"><label>一级分类：</label>
+                            <select name="pone" id="pone" style="width:300px;height:40px;line-height:40px;text-align: center"/>
+                            <option value="">-请选择一级分类-</option>
+                            <option value="学习用品">书籍资料</option>
+                            <option value="生活用品">电子产品</option>
+                            <option value="电子产品">家居用品</option>
+                            <option value="运动用品">运动用品</option>
+                            <option value="学习用品">校园代步</option>
+                            <option value="生活用品">生活娱乐</option>
+                            <option value="电子产品">鞋包配饰</option>
+                            <option value="运动用品">其他商品</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>二级分类：</label><input type="text" name="ptwo"/></div>
+                        <div class="form-group"><label>商品价格：</label><input type="text" name="price"/></div>
+                        <div class="form-group"><label>新旧程度：</label><input type="text" name="newold"/></div>
+                        <div class="form-group"><label>发布时间：</label><input type="text" name="pubtime"/></div>
+                        <div class="form-group"><label>下架时间：</label><input type="date" name="retaintime"/></div>
+                    </div>
+                    <div class="rt pInfo clearfix" >
+                        <div class="form-group">
+                            <label>商品描述：</label> <textarea name="pdesc"  cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-group"> <label>发布理由：</label> <textarea name="pres"  cols="30" rows="10"></textarea></div>
+                        <div class="form-group">
+                            <label>上传图片：</label>
+                            <div class="upPic" name="pic">
+                                <ul class="clearfix">
+                                    <li>
+                                        <div id="preview1" class="previewImg"></div>
+                                        <input  id="stt1" name="pic1" class="upfile" type="file"/>
+                                    </li>
+                                    <li class="li-center">
+                                        <div id="preview2" class="previewImg"></div>
+                                        <input  id="stt2" name="pic2" class="upfile2" type="file"/>
+                                    </li>
+                                    <li>
+                                        <div id="preview3" class="previewImg"></div>
+                                        <input  id="st3" name="pic3"  class="upfile3" type="file"/>
+                                    </li>
+                                    <li>
+                                        <div id="preview4" class="previewImg"></div>
+                                        <input  id="st4" name="pic4" class="upfile4" type="file"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pubBtn"><input type="button" id="pub" value="确认发布"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="bottomNav">
+    <ul>
+        <a href=""><span>双方学生认证</span></a>
+        <a href=""><span>在线聊天确认交易</span></a>
+        <a href=""><span>面对面进行交易</span></a>
+        <a href=""><span>运行方式更安全</span></a>
+    </ul>
+</div>
+<footer>
+<span>
+    <a href="">书籍资料</a>
+    <a href="">运动专区</a>
+    <a href="">电子产品</a>
+    <a href="">鞋包配饰</a>
+    <a href="">校园代步</a>
+    <a href="">生活娱乐</a>
+    <a href="">租赁物品</a>
+    <a href="">家居用品</a>
+    <a href="">其它商品</a>
+</span>
+    <span>
+        <a href="">版权所有：偶的驿站</a>
+        <a href="">技术支持：RB软工移131、132班</a>
+    </span>
+    <p style="text-align: center;line-height: 30px"><a style="color: #fff;line-height: 30px;font-size: 12px" href="../ODYZBackstage/index.html">后台入口</a></p>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/public2.js"></script>
+<script src="js/pubProduct.js"></script>
+<script>
+    $('.upfile').change(function() {
+        var fd = new FormData();
+        fd.append("upload", 0);
+        fd.append("upfile", $(".upfile").get(0).files[0]);
+        $.ajax({
+            url: "data/pubImg1.php",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: fd,
+            success: function(d) {
+                var html="";
+                html=`<img src="${d}" />`;
+                $('#preview1').html(html);
+            }
+        });
+    });
+    $('.upfile2').change(function() {
+        var fd = new FormData();
+        fd.append("upload", 0);
+        fd.append("upfile2", $(".upfile2").get(0).files[0]);
+        $.ajax({
+            url: "data/pubImg2.php",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: fd,
+            success: function(d) {
+                var html="";
+                html=`<img src="${d}" />`;
+                $('#preview2').html(html);
+            }
+        });
+    });
+    $('.upfile3').change(function() {
+        var fd = new FormData();
+        fd.append("upload", 0);
+        fd.append("upfile3", $(".upfile3").get(0).files[0]);
+        $.ajax({
+            url: "data/pubImg3.php",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: fd,
+            success: function(d) {
+                var html="";
+                html=`<img src="${d}" />`;
+                $('#preview3').html(html);
+            }
+        });
+    });
+    $('.upfile4').change(function() {
+        var fd = new FormData();
+        fd.append("upload", 0);
+        fd.append("upfile4", $(".upfile4").get(0).files[0]);
+        $.ajax({
+            url: "data/pubImg4.php",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: fd,
+            success: function(d) {
+                var html="";
+                html=`<img src="${d}" />`;
+                $('#preview4').html(html);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?php
+/**接收客户端提交的uname和pid，把相关信息保存入需要的表，返回：{"msg": "ok","uid":1,"cid":100,"pid":10,"count":4}**/
+header('Content-Type: text/plain;charset=UTF-8');
+
+//接收客户端提交的数据
+@$uname = $_REQUEST['uname'];
+@$tipName =$_REQUEST['tipName'];
+@$pname = $_REQUEST['pname'];
+@$reason = $_REQUEST['reason'];
+$tipTime = time()*1000;   //服务器端当前系统时间
+$tipStatus = 1;    //刚生成的订单状态都是'等待付款'
+$cancel = "";
+
+if( !$uname || !$tipName || !$pname || !$reason){ //若客户端未提交必需的数据
+	echo "{}";
+	return;	//退出当前PHP页面的执行
+}
+
+
+/*********************************/
+
+//连接数据库
+include('0_config.php'); //包含指定文件的内容在当前位置
+$conn = mysqli_connect($db_url, $db_user, $db_pwd, $db_name, $db_port);
+
+//SQL1：设置编码方式
+$sql = "SET NAMES UTF8";
+mysqli_query($conn, $sql);
+
+$sql = "INSERT INTO report VALUES(NULL,'$tipName','$uname','$pname','$reason','$tipTime','$tipStatus','$cancel')";
+	$result = mysqli_query($conn,$sql);
+	if($result){
+	echo "ok";
+	}

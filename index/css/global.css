@@ -1,0 +1,42 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img ,a{ margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+body{width: 100%;height: 100%}
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {  font-size:14px;  font-family: "SimSun", "宋体"  color:#4B4B4B;  background-color:#fff;  }
+.clearfix:before,.clearfix:after {  content:"";  display:table;  _font-size:0px;  }
+.clearfix:after{clear:both;}
+.clearfix{  *zoom:1;/*IE/7/6*/  }
+.clearf:after{content:"";  display:table; clear:both;}
+a {color:#4B4B4B; text-decoration:none; }
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+/*公共类*/
+.g-container {  width: 1400px;margin:0 auto;  }
+.lf{float:left}
+.rt{float:right}
+*:focus {outline: none;}
+.center{
+    text-align: center;
+}
+#top-bar{
+    width:100%;
+    background: #f2f2f2;
+    height:30px;
+    line-height: 30px;
+    font-size: 12px;
+    color:#666666;
+}
+#head_top,#headMain_content{
+    width: 1200px;
+    margin:0 auto;
+}
+#top-bar #head_top span.lf{
+    padding-left:35px;
+    background: url(../images/demo_list.png) -4px 6px;
+}

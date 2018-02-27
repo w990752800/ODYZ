@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>偶的驿站：用户中心</title>
+  <link rel="stylesheet" href="../detail/css/public.css"/>
+  <link rel="stylesheet" href="../detail/css/userCenter.css"/>
+  <link rel="stylesheet" href="../detail/css/index.css"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<!--头部-->
+<div class="model-tips" id="model-tips">
+  <div class="tips">
+    <h3>提示</h3>
+    <p>商品重新上架成功！</p>
+    <a id="sure-btn" class="sure-btn" href="javascript:;">确定</a>
+  </div>
+</div>
+<div class="model-tips" id="model-tipsT">
+  <div class="tips">
+    <h3>提示</h3>
+    <p>商品删除成功！</p>
+    <a id="sure-btnT" class="sure-btn" href="shelfGoods.html">确定</a>
+  </div>
+</div>
+<div id="top-bar">
+  <div id="head_top" class="clearfix">
+    <span class="lf">大学生二手交易平台</span>
+    <ul class="rt">
+      <li><span id="welcome">您好！欢迎来到Old的驿站</span></li>
+      <li><a href="login.html">登录</a><i></i>|</li>
+      <li><a href="register.html">免费注册</a></li>
+      <li><a href="helpCenter.html">帮助中心</a></li>
+    </ul>
+  </div>
+</div>
+<div id="head_main">
+  <div id="headMain_content" class="clearfix">
+    <a href="#" class="lf">
+      <img src="images/logo.png" alt="LOGO" />
+    </a>
+    <div id="search_box" class="lf">
+      <div class="search">
+        <input id="txtSearch" type="text" class="text" placeholder="请输入您需要的商品"/><input class="search_button" name="" id="search_button" type="button" value="搜索" />
+      </div>
+      <div class="hot_words">
+        <a href="#">自行车</a>|
+        <a href="#">电动车</a>|
+        <a href="#">笔记本</a>|
+        <a href="#">教材</a>
+      </div>
+    </div>
+    <div id="buy"class="rt">
+      <a class="user">用户中心</a>
+      <a class="my-grade">我的积分</a>
+      <a class="cart">购物车</a>
+      <i></i>
+    </div>
+  </div>
+</div>
+<div id="main_nav">
+  <div id="nav" class="clearfix">
+    <div class="pructNav">
+      <a href="javascript:;">所有商品分类</a>
+      <!--<ul class="pull-menu" style="display:block;">-->
+        <!--<li><a href="">书籍资料</a></li>-->
+        <!--<li><a href="">电子产品</a></li>-->
+        <!--<li><a href="">家居用品</a></li>-->
+        <!--<li class="subnav-click"><a href="">运动专区</a></li>-->
+        <!--<li><a href="">校园代步</a></li>-->
+        <!--<li><a href="">生活娱乐</a></li>-->
+        <!--<li><a href="">鞋包配饰</a></li>-->
+        <!--<li><a href="">租赁物品</a></li>-->
+        <!--<li><a href="">其他商品</a></li>-->
+      <!--</ul>-->
+    </div>
+    <ul class="lf">
+      <li><a href="firstPage.html">首页</a></li>
+      <li  class="pubProduct u-deepBlue"><a>商品发布</a></li>
+      <li class="wantBuyArea"><a>求购专区</a></li>
+      <!--<li><a href="">紧急销售</a></li>-->
+      <li class="newPub "><a >最新发布</a></li>
+      <li class="wantBuy"><a>发布求购</a></li>
+      <li class="headNav"><a href="helpCenter.html">其他</a></li>
+    </ul>
+  </div>
+
+</div>
+<!--用户中心-->
+<section>
+  <!--左侧导航-->
+  <div id="main">
+    <div class="myApp">
+      <ul>
+        <li class="title">我的账户</li>
+        <li class="accountInfo"><a>账户信息</a></li>
+        <li class="stuCertification"><a>学生认证</a></li>
+        <li class="changePwd"><a>修改密码</a></li>
+        <li class="payChart"><a>消费统计</a></li>
+        <li class="incomeChart"><a>收入统计</a></li>
+        <li class="title">我的商品</li>
+        <li class="myShoppingCart"><a>我的购物车</a></li>
+        <li class="myOrder"><a>我的订单</a></li>
+        <li class="myCollection"><a>我的收藏</a></li>
+        <li class="shelfGoods curr"><a>下架商品</a></li>
+        <li class="title">商品管理</li>
+        <li class="myRelease"><a>我的发布</a></li>
+        <li class="mypubMyorder"><a>商品订单</a></li>
+        <li class="myWantBuy"><a>我的求购</a></li>
+        <li class="title">其他</li>
+        <li class="commodityRule"><a>商品规则</a></li>
+        <li class="IntegralRule"><a>积分规则</a></li>
+      </ul>
+    </div>
+    <!--下架商品-->
+    <div id="shelfGoods">
+      <h2>下架商品</h2>
+      <div class="myShoppingCart" style="height:691px;position:relative;">
+        <table>
+          <thead>
+          <tr>
+            <th>商品信息</th>
+            <th>价格</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+          <!--<tr>-->
+            <!--<td>-->
+              <!--<p class="pic">-->
+                <!--<img src="../img/book-s1.jpg" alt=""/>-->
+              <!--</p>-->
+              <!--<div>-->
+                <!--<p>Java开发技术实践</p>-->
+                <!--<p class="owner">商品持有人：花生的星愿</p>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td class="price">¥30.40</td>-->
+            <!--<td>-->
+              <!--<button>重新上架</button>-->
+              <!--<a href="">彻底删除</a>-->
+            <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+            <!--<td>-->
+              <!--<p class="pic">-->
+                <!--<img src="../img/book-s1.jpg" alt=""/>-->
+              <!--</p>-->
+              <!--<div>-->
+                <!--<p>Java开发技术实践</p>-->
+                <!--<p class="owner">商品持有人：花生的星愿</p>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td class="price">¥30.40</td>-->
+            <!--<td>-->
+              <!--<button>重新上架</button>-->
+              <!--<a href="">彻底删除</a>-->
+            <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+            <!--<td>-->
+              <!--<p class="pic">-->
+                <!--<img src="../img/book-s1.jpg" alt=""/>-->
+              <!--</p>-->
+              <!--<div>-->
+                <!--<p>Java开发技术实践</p>-->
+                <!--<p class="owner">商品持有人：花生的星愿</p>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td class="price">¥30.40</td>-->
+            <!--<td>-->
+              <!--<button>重新上架</button>-->
+              <!--<a href="">彻底删除</a>-->
+            <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+            <!--<td>-->
+              <!--<p class="pic">-->
+                <!--<img src="../img/book-s1.jpg" alt=""/>-->
+              <!--</p>-->
+              <!--<div>-->
+                <!--<p>Java开发技术实践</p>-->
+                <!--<p class="owner">商品持有人：花生的星愿</p>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td class="price">¥30.40</td>-->
+            <!--<td>-->
+              <!--<button>重新上架</button>-->
+              <!--<a href="">彻底删除</a>-->
+            <!--</td>-->
+          <!--</tr>-->
+        </table>
+        <div id="list-page" style="position: absolute;bottom:30px; width: 100%;text-align: center"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--尾部-->
+<div id="bottomNav">
+  <ul>
+    <a href=""><span>双方学生认证</span></a>
+    <a href=""><span>在线聊天确认交易</span></a>
+    <a href=""><span>面对面进行交易</span></a>
+    <a href=""><span>运行方式更安全</span></a>
+  </ul>
+</div>
+<footer>
+<span>
+    <a href="">书籍资料</a>
+    <a href="">运动专区</a>
+    <a href="">电子产品</a>
+    <a href="">鞋包配饰</a>
+    <a href="">校园代步</a>
+    <a href="">生活娱乐</a>
+    <a href="">租赁物品</a>
+    <a href="">家居用品</a>
+    <a href="">其它商品</a>
+</span>
+    <span>
+        <a href="">版权所有：偶的驿站</a>
+        <a href="">技术支持：RB软工移131、132班</a>
+    </span>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/public2.js"></script>
+<script src="js/soldOut.js"></script>
+</body>
+</html>

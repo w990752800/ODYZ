@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/data/Stuvalidate.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/addIntegral.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/banUser.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cancelBanUser.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cancelDeleteUser.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/cancelReport.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/deleteIntegral.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/deleteManager.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/deleteProduct.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/deleteUser.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/failStuvalidate.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/managerSearch.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/passStuvalidate.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/reportSearch.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/reportSearch0.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/reportSearch1.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/stuvalidateSearch.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/stuvalidateSearch0.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/stuvalidateSearch1.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/stuvalidateSearch2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/userSearch.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/userSearch0.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/userSearch1.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/userSearch2.php" charset="UTF-8" />
+  </component>
+</project>

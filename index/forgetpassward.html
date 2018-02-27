@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body style="background:#f4f8fb;overflow: hidden">
+<div class="head">
+    <div id="headMain" class="clearfix">
+        <a href="#" class="lf logo-title">
+            <img src="images/logo.png" alt="LOGO" />
+            <h3 class="rt">忘记密码</h3>
+        </a>
+    </div>
+</div>
+<div class="g-container zg-container">
+    <div class="">
+    <div class="zm-rgtitle content-box1">
+        <span>您现在的位置：<a href="firstPage.html">网站首页</a>&nbsp;>&nbsp;忘记密码</span>
+        <h3>密码找回</h3>
+    </div>
+    <div class="zm-container">
+        <form id="form-register">
+            <div class="form-group1">
+                <label for="uname"><i></i>用户名：</label>
+                <input required minlength="6" maxlength="9" type="text" placeholder="请输入用户名" autofocus name="uname" id="uname"/>
+            </div>
+            <div class="form-group1">
+                <label for="safe"><i></i>密保问题：</label>
+                <input required type="text" placeholder="当用户名核对成功时显示密保问题" name="safe" id="safe"/>
+            </div>
+            <div class="form-group1">
+                <label for="answer"><i></i>答案：</label>
+                <input required type="text" placeholder="请输入您的答案" name="answer" id="answer"/>
+            </div>
+            <div class="form-group1">
+                <input type="button" value="提交" id="forgetPwd-btn"/>
+            </div>
+            <div class="form-group1">
+                <label for="showinfo"><i></i>您的密码：</label>
+                <input required type="text" placeholder="信息验证成功显示密码" name="answer" id="showinfo"/>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

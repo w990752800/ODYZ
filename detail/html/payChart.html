@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>偶的驿站：用户中心</title>
+  <link rel="stylesheet" href="../css/public.css"/>
+  <link rel="stylesheet" href="../css/userCenter.css"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+
+</head>
+<body>
+  <!--头部-->
+  <div id="top_box"></div>
+  <!--搜索和热门-->
+  <div id="searchHot"></div>
+  <div id="main_nav"></div>
+  <!--用户中心-->
+  <section>
+      <!--左侧导航-->
+      <div id="main">
+        <div class="myApp">
+          <ul>
+            <li class="title">我的账户</li>
+            <li class="accountInfo"><a>账户信息</a></li>
+            <li class="stuCertification"><a>学生认证</a></li>
+            <li class="changePwd"><a>修改密码</a></li>
+            <li class="payChart curr"><a>消费统计</a></li>
+            <li class="incomeChart"><a>收入统计</a></li>
+            <li class="title">我的商品</li>
+            <li class="myShoppingCart"><a>我的购物车</a></li>
+            <li class="myOrder"><a>我的订单</a></li>
+            <li class="myCollection"><a>我的收藏</a></li>
+            <li class="shelfGoods"><a>下架商品</a></li>
+            <li class="title">商品管理</li>
+            <li class="myRelease"><a>我的发布</a></li>
+            <li class="mypubMyorder"><a>商品订单</a></li>
+            <li class="myWantBuy"><a>我的求购</a></li>
+            <li class="title">其他</li>
+            <li class="commodityRule"><a>商品规则</a></li>
+            <li class="IntegralRule"><a>积分规则</a></li>
+          </ul>
+        </div>
+        <!--用户中心-->
+        <div id="payChart">
+          <h2>消费统计</h2>
+          <div id="payChartContainner">
+            <p style="padding:20px 330px 10px 345px;background: #fff;line-height: 40px;font-size: 20px;">本年度消费统计</p>
+            <div id="payChartInner" style="width: 935px; height:500px;background: #fff;padding-left: 65px"></div>
+          </div>
+        </div>
+        </div>
+  </section>
+  <!--尾部-->
+  <footer id="footer"></footer>
+  <script src="../js/jquery-1.11.3.js"></script>
+  <script src="../js/public.js"></script>
+  <script src="../js/fusioncharts.js"></script>
+  <script src="../js/fusioncharts.charts.js"></script>
+  <script src="../js/payChart.js"></script>
+</body>
+</html>

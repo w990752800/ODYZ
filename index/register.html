@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body style="background:#f4f8fb;">
+<div class="model-tips">
+    <div class="tips">
+        <h3>提示</h3>
+        <p>您已注册成功 点击 <a href="login.html">登录</a>进入登录页面</p>
+        <span class="sure-btn">确定</span>
+    </div>
+</div>
+<div class="head">
+    <div id="headMain" class="clearfix">
+        <a href="#" class="lf logo-title">
+            <img src="images/logo.png" alt="LOGO" />
+            <h3 class="rt">注册用户</h3>
+        </a>
+    </div>
+</div>
+<div class="g-container zg-container">
+    <div class="zm-rgtitle">
+        <span>您现在的位置：<a href="firstPage.html">网站首页</a>&nbsp;>&nbsp;注册</span>
+        <h3>账户注册</h3>
+    </div>
+    <div class="content-box1">
+        <div class="zm-container">
+         <form id="form-register">
+             <div class="form-group1">
+                 <label for="uname"><i></i>用户名：</label>
+                 <input required  type="text" placeholder="用户名设置成功后不可修改" autofocus name="uname" id="uname"/>
+                 <span>6-9位字母、数字或“_”组合</span>
+
+             </div>
+             <div class="form-group1">
+                 <label for="upwd"><i></i>登录密码：</label>
+                 <input type="password" placeholder="请输入密码" name="upwd" id="upwd"/>
+                 <span><i class="msg-deafult"></i> <i></i> <i></i></span>
+             </div>
+             <div class="form-group1">
+                 <label for="corfirmupwd"><i></i>确认密码：</label>
+                 <input type="password" placeholder="再次输入登录密码" name="corfirmupwd" id="corfirmupwd"/>
+                 <span class="">密码长度在6到12位之间</span>
+             </div>
+             <div class="form-group1">
+                 <label for="QQ"><i></i>QQ号：</label>
+                 <input type="text" placeholder="必填" name="QQ" id="QQ"/>
+             </div>
+             <div class="form-group1">
+                 <label for="otherCode"><i></i>邀请码：</label>
+                 <input type="text"  name="otherCode" id="otherCode"/>
+             </div>
+             <div class="form-group1">
+                 <label for="safe"><i></i>密保问题：</label>
+                 <input required type="text" placeholder="忘记密码时用来找回密码" name="safe" id="safe"/>
+                 <span class="">这是个问题••••••</span>
+             </div>
+             <div class="form-group1">
+                 <label for="answer"><i></i>答案：</label>
+                 <input required type="text" placeholder="" name="answer" id="answer"/>
+                 <span class="">这是一个问题的答案，简单好记就好</span>
+             </div>
+             <!--<div class="form-group1">-->
+                 <!--<input type="checkbox" id="accept-btn"/>我已阅读并同意 <a href="">&lt;&lt;偶的驿站网站服务条款&gt;&gt;</a>-->
+             <!--</div>-->
+             <div class="form-group1">
+                 <input type="button" value="注册" id="register-btn"/>
+             </div>
+         </form>
+     </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

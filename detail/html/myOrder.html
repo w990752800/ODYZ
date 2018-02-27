@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>偶的驿站：用户中心</title>
+  <link rel="stylesheet" href="../css/public.css"/>
+  <link rel="stylesheet" href="../css/userCenter.css"/>
+  <link rel="stylesheet" href="../css/index.css"/>
+
+</head>
+<body>
+<div class="model-tips" id="model-tips">
+  <div class="tips">
+    <h3>提示</h3>
+    <p></p>
+    <span class="sure-btn">确定</span>
+  </div>
+</div>
+<!--头部-->
+<div id="top_box"></div>
+<!--搜索和热门-->
+<div id="searchHot"></div>
+<div id="main_nav"></div>
+<!--用户中心-->
+<section>
+  <!--左侧导航-->
+  <div id="main">
+    <div class="myApp">
+      <ul>
+        <li class="title">我的账户</li>
+        <li class="accountInfo"><a>账户信息</a></li>
+        <li class="stuCertification"><a>学生认证</a></li>
+        <li class="changePwd"><a>修改密码</a></li>
+        <li class="payChart"><a>消费统计</a></li>
+        <li class="incomeChart"><a>收入统计</a></li>
+        <li class="title">我的商品</li>
+        <li class="myShoppingCart"><a>我的购物车</a></li>
+        <li class="myOrder curr"><a>我的订单</a></li>
+        <li class="myCollection"><a>我的收藏</a></li>
+        <li class="shelfGoods"><a>下架商品</a></li>
+        <li class="title">商品管理</li>
+        <li class="myRelease"><a>我的发布</a></li>
+        <li class="mypubMyorder"><a>商品订单</a></li>
+        <li class="myWantBuy"><a>我的求购</a></li>
+        <li class="title">其他</li>
+        <li class="commodityRule"><a>商品规则</a></li>
+        <li class="IntegralRule"><a>积分规则</a></li>
+      </ul>
+    </div>
+    <!--我的订单-->
+    <div id="myOrder">
+      <h2>
+        <!--<ul>-->
+          <!--<li class="curr"><a href="#wddd">我的订单</a></li>-->
+          <!--<li><a href="#zzjy">正在交易（<i>2</i>）</a></li>-->
+          <!--<li><a href="#qrjy">确认交易（<i>1</i>）</a></li>-->
+          <!--<li><a href="#wdpj">我的评价（<i>16</i>）</a></li>-->
+        <!--</ul>-->
+      </h2>
+      <!--我的订单-->
+      <div id="wddd" class="myShoppingCart curr">
+        <table>
+          <thead>
+          <tr>
+            <th>商品信息</th>
+            <th>价格</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+        </table>
+        <div id="no-product-shows">
+          您的订单列表中还没有商品哟！
+        </div>
+        <p class="pager">
+          <!--<a href="">首页</a><a href="">上一页</a><a href="">1</a><a href="" class="curr">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a>-->
+        </p>
+      </div>
+      <!--正在交易-->
+      <div id="zzjy" class="myShoppingCart">
+        <table>
+          <thead>
+          <tr>
+            <th>商品信息</th>
+            <th>价格</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+        </table>
+        <p class="pager">
+          <!--<a href="">首页</a><a href="">上一页</a><a href="">1</a><a href="" class="curr">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a>-->
+        </p>
+      </div>
+      <!--确认交易-->
+      <div id="qrjy" class="myShoppingCart">
+        <table>
+          <thead>
+          <tr>
+            <th>商品信息</th>
+            <th>价格</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+        </table>
+        <p class="pager">
+          <!--<a href="">首页</a><a href="">上一页</a><a href="">1</a><a href="" class="curr">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a>-->
+        </p>
+        <!--模态评论对话框-->
+        <div class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <h4>评论</h4>
+              <p class="alert">
+                请在此处输入您的评论内容。
+              </p>
+              <form id="comment-form">
+                <input type="text" name="uname" value="" style="display: none"/>
+                <input type="text" name="pid" value="" style="display: none"/>
+                <input type="text" placeholder="评分，最高为10分" name="score" value="">
+                <textarea name="comment" id="" cols="46" rows="5" placeholder="评论内容"></textarea>
+                <input type="button" value="评论" id="bt-comment">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--我的评论-->
+      <div id="wdpj" class="myShoppingCart">
+        <table>
+          <thead>
+          <tr>
+            <th>商品信息</th>
+            <th>价格</th>
+            <th>评论</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+          <!--<td>-->
+          <!--<p class="pic">-->
+          <!--<img src="../img/book-s1.jpg" alt=""/>-->
+          <!--</p>-->
+          <!--<div>-->
+          <!--<p>Java开发技术实践</p>-->
+          <!--<p class="owner">商品持有人：花生的星愿</p>-->
+          <!--</div>-->
+          <!--</td>-->
+          <!--<td class="price">¥30.40</td>-->
+          <!--<td>-->
+          <!--<button>确认购买</button>-->
+          <!--<a href="">删除</a>-->
+          <!--</td>-->
+          <!--</tr>-->
+        </table>
+        <p class="pager">
+          <!--<a href="">首页</a><a href="">上一页</a><a href="">1</a><a href="" class="curr">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a>-->
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--尾部-->
+<footer id="footer"></footer>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/myOrder.js"></script>
+</body>
+</html>

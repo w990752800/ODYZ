@@ -1,0 +1,248 @@
+/*通用样式*/
+body{
+    background: #fff;
+    font: 14px "宋体",Arial,sans-serif;
+    color:#333;
+    margin: 0;
+    padding: 0;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+i,em,s{font-style: normal;text-decoration: none;padding: 0;margin: 0;}
+input{margin: 0;padding: 0;}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:bottom;}
+a{
+    color:#333;
+    text-decoration:none;
+}
+a:hover{
+    color:#FF0700;
+}
+
+/*页面的主体布局*/
+#top_box,#goodsClassify{
+    width: 100%;
+    height: 40px;
+}
+
+header,#searchHot,#goodsClassify>ul,#main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*头部css*/
+#top_box{
+    background: #f2f2f2;
+}
+header{
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+header p{
+    float:left;
+}
+header p img{
+    position: relative;
+    top:-5px;
+    left: -2px;
+}
+header p {
+   font-size: 12px;
+
+}
+header ul{
+    float: right;
+}
+header ul li{
+    float: left;
+    margin: 0 10px;
+    font-size: 12px;
+}
+header ul li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+}
+header ul .login{
+    display: none;
+}
+
+/*热门搜索*/
+#searchHot{
+    height: 120px;
+    margin: 20px auto;
+}
+/*logo*/
+.logo{
+    float: left;
+}
+
+/*搜索框 和热门*/
+.searchHot{
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.search{
+    border: 2px solid #3ca3dd;
+    float: left;
+    box-sizing: border-box;
+}
+.searchHot input{
+    width: 478px;
+    height: 36px;
+    padding-left: 5px;
+    border:0;
+}
+.searchHot input:focus{
+    border: none;
+}
+.searchHot button{
+    background: #3ca3dd;
+    color: #fff;
+    width: 100px;
+    height: 36px;
+    margin: 0;
+    border: 0;
+}
+.hot{
+    margin-top: 10px;
+}
+.hot a{
+    color: #666;
+    margin:20px;
+}
+/*福利，订单，购物车*/
+.shoppingCart{
+    float: right;
+    margin-top: 20px;
+}
+.shoppingCart ul{
+    margin-top: 8px;
+}
+.shoppingCart li{
+    float: left;
+    padding: 4px 10px;
+    text-align: center;
+    margin: 0;
+    border: 1px solid #b3b3b3;
+    background: #fff;
+}
+.shoppingCart li i{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/small.png") no-repeat -33px -5px ;
+}
+.shoppingCart li:first-child i{
+    background: url("../img/small.png") no-repeat -5px -5px ;
+}
+.shoppingCart li:last-child{
+    background: #3ca3dd;
+    width: 100px;
+    height: 64px;
+    line-height: 70px;
+    border: none;
+}
+.shoppingCart li:last-child i{
+    float: left;
+    margin-top: 10px;
+    background: url("../img/small.png") no-repeat -135px -5px ;
+}
+.shoppingCart li a{
+    display: block;
+}
+.shoppingCart li:last-child a{
+
+    color: #fff;
+    font-size: 16px;
+    line-height: 56px;
+}
+
+/*商品分类*/
+
+/*#goodsClassify{*/
+    /*background:#3c83c5;*/
+    /*height: 50px;*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*#goodsClassify ul li{*/
+    /*float: left;*/
+    /*padding: 0 20px;*/
+/*}*/
+/*#goodsClassify ul li.curr,#goodsClassify ul li:hover{*/
+    /*background: #3572ab;*/
+/*}*/
+/*#goodsClassify ul li:first-child{*/
+    /*height: 56px;*/
+    /*margin-top: -3px;*/
+    /*background: #498fd1;*/
+    /*z-index: 100;*/
+/*}*/
+/*#goodsClassify ul li:first-child a{*/
+    /*font-size: 18px;*/
+/*}*/
+/*#goodsClassify ul li a{*/
+    /*font-size: 16px;*/
+    /*color: #fff;*/
+    /*display: block;*/
+    /*font-weight: normal;*/
+    /*line-height: 50px;*/
+/*}*/
+/*#goodsClassify ul li.curr a,#goodsClassify ul li:hover a{*/
+    /*color: #fff;*/
+/*}*/
+/*尾部*/
+footer{
+    width: 100%;
+    background: #4d4d4d;
+    text-align: center;
+    color: #fff;
+}
+footer ul{
+    width: 100%;
+    background: #333;
+    margin: 0 auto;
+    height: 160px;
+    overflow: hidden;
+}
+footer ul li{
+    display: inline-block;
+    height: 160px;
+    padding:20px 0;
+    margin: 0 40px;
+}
+footer ul li a{
+    color: #fff;
+}
+footer ul li i{
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url("../img/small.png") no-repeat -200px -45px;
+}
+footer ul li:first-child i{
+    background: url("../img/footer1.png") no-repeat -11px -2px;
+}
+footer ul li i.chat{
+    background: url("../img/small.png") no-repeat -90px -45px;
+}
+footer ul li:last-child i{
+    background: url("../img/small.png") no-repeat -315px -45px;
+}
+footer p{
+    height: 100px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    line-height: 30px;
+}
